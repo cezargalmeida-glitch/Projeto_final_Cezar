@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio — Relâmpago McQueen #95</title>
+
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+
+  <!-- Ícones FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Arquivo CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ANIMAÇÃO DE INTRODUÇÃO -->
+  <div id="intro-overlay">
+    <div class="intro-content">
+      <div class="lightning-bolt-large">⚡</div>
+      <div class="intro-number">95</div>
+      <div class="intro-title" id="intro-name-display">RELÂMPAGO MCQUEEN</div>
+      <div class="intro-subtitle">"Eu sou a velocidade!"</div>
+      <button class="btn-kachow-intro" id="btn-start-engine">
+        <i class="fa-solid fa-gauge-high"></i> LIGAR MOTORES!
+      </button>
+    </div>
+  </div>
+
+  <!-- CABEÇALHO / NAVBAR -->
+  <header>
+    <div class="brand">
+      <div class="badge-95">95</div>
+      <div class="brand-text">
+        <span class="brand-name" id="nav-name">SEU NOME</span>
+        <span class="brand-sub">RUST-EZE CHAMPION</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Troféus</a>
+      <a href="#contact">Pit Stop</a>
+    </nav>
+
+    <div class="actions">
+      <button class="btn-kachow" id="btn-kachow-sound">
+        <i class="fa-solid fa-bolt"></i> KACHOW!
+      </button>
+      <button class="btn-pitstop" id="btn-open-editor">
+        <i class="fa-solid fa-wrench"></i> EDITAR PERFIL
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <i class="fa-solid fa-flag-checkered"></i> PISTON CUP VELOCITY PORTFOLIO
+      </div>
+      
+      <div class="profile-container">
+        <div class="profile-frame">
+          <img id="profile-img" src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80" alt="Foto de Perfil McQueen">
+          <div class="bolt-badge">⚡ 95</div>
+        </div>
+      </div>
+
+      <h1 class="hero-title" id="profile-name">SEU NOME AQUI</h1>
+      <h2 class="hero-role" id="profile-role">Piloto Desenvolvedor Full Stack & Especialista em Altas Velocidades</h2>
+      
+      <p class="hero-quote" id="profile-quote">
+        "Mais rápido que o rápido, mais veloz que o veloz... Eu sou a Velocidade!"
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary"><i class="fa-solid fa-trophy"></i> Ver Projetos</a>
+        <a href="#contact" class="btn-secondary"><i class="fa-solid fa-paper-plane"></i> Entrar em Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">TELEMETRIA DE CARREIRA</span>
+        <h2>SOBRE O PILOTO</h2>
+      </div>
+
+      <div class="about-card">
+        <div class="about-icon">
+          <i class="fa-solid fa-car-side"></i>
+        </div>
+        <div class="about-body">
+          <h3>Biografia & Filosofia de Pista</h3>
+          <p id="profile-bio">
+            Bem-vindo ao meu cockpit! Assim como o Relâmpago McQueen aprendeu em Radiator Springs, tecnologia e desenvolvimento não são apenas sobre velocidade pura, mas sim sobre precisão, trabalho em equipe e entregar uma experiência inesquecível a cada curva do código.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-number">95%</span>
+              <span class="stat-label">Taxa de Eficiência</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">7x</span>
+              <span class="stat-label">Piston Cups Vencidas</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">0-100</span>
+              <span class="stat-label">Entrega Turbo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">DESEMPENHO DO MOTOR</span>
+        <h2>HABILIDADES DE ALTA PERFORMANCE</h2>
+      </div>
+
+      <div class="skills-grid" id="skills-list">
+        <!-- Inseridas dinamicamente pelo JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS / TROFÉUS -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">GALERIA DE VITÓRIAS</span>
+        <h2>PROJETOS & TROFÉUS</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-badge"><i class="fa-solid fa-trophy"></i> PISTON CUP #1</div>
+          <h3>Motor de Renderização Rust-eze</h3>
+          <p>Aplicação web para simulação de física veicular e gerenciamento de performance com telemetria em tempo real.</p>
+          <div class="project-tags"><span>JavaScript</span><span>Canvas</span><span>CSS3</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge"><i class="fa-solid fa-trophy"></i> RADIATOR SPRINGS</div>
+          <h3>Pit Stop Dashboard</h3>
+          <p>Painel interativo para troca rápida de componentes e otimização de tempo de carregamento de aplicações.</p>
+          <div class="project-tags"><span>HTML5</span><span>LocalStorage</span><span>Flexbox</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge"><i class="fa-solid fa-trophy"></i> DINOCO SPEEDWAY</div>
+          <h3>App de Altas Velocidades</h3>
+          <p>Plataforma para monitoramento de rotas e rotinas assíncronas com foco na melhor experiência do usuário.</p>
+          <div class="project-tags"><span>Web API</span><span>UI/UX</span><span>Animations</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">ESTAÇÃO DE RÁDIO</span>
+        <h2>ENTRE EM CONTATO NO PIT STOP</h2>
+      </div>
+
+      <div class="contact-box">
+        <form id="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada no rádio da equipe! KACHOW!');">
+          <div class="form-group">
+            <label>Seu Nome / Chefe de Equipe</label>
+            <input type="text" placeholder="Ex: Doc Hudson" required>
+          </div>
+          <div class="form-group">
+            <label>Frequência (E-mail)</label>
+            <input type="email" placeholder="seu-email@rusteze.com" required>
+          </div>
+          <div class="form-group">
+            <label>Mensagem da Pista</label>
+            <textarea rows="4" placeholder="Escreva sua mensagem para a equipe #95..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-block">
+            <i class="fa-solid fa-paper-plane"></i> ENVIAR SINAL DE RÁDIO
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="footer-content">
+      <div class="badge-95">95</div>
+      <p>Desenvolvido com o poder e a velocidade de <strong>Relâmpago McQueen (#95)</strong>.</p>
+      <p class="copyright">Rust-eze Medicated Bumper Ointment &copy; Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL DE EDIÇÃO DO PERFIL / PIT STOP -->
+  <div id="editor-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fa-solid fa-wrench"></i> PAINEL DO PIT STOP — EDITAR PERFIL</h2>
+        <button class="btn-close" id="btn-close-editor">&times;</button>
+      </div>
+
+      <form id="editor-form">
+        <!-- Foto de Perfil -->
+        <div class="form-section">
+          <h3><i class="fa-solid fa-camera"></i> Foto de Perfil</h3>
+          
+          <div class="input-option">
+            <label for="input-img-url">Cole a URL da Imagem:</label>
+            <input type="text" id="input-img-url" placeholder="https://exemplo.com/sua-foto.jpg">
+          </div>
+
+          <div class="or-divider">OU</div>
+
+          <div class="input-option">
+            <label for="input-img-file">Carregue um Arquivo do seu Computador:</label>
+            <input type="file" id="input-img-file" accept="image/*">
+          </div>
+        </div>
+
+        <!-- Informações Pessoais -->
+        <div class="form-section">
+          <h3><i class="fa-solid fa-user"></i> Informações Gerais</h3>
+
+          <div class="form-group">
+            <label for="input-name">Seu Nome / Piloto</label>
+            <input type="text" id="input-name" placeholder="Ex: Relâmpago McQueen">
+          </div>
+
+          <div class="form-group">
+            <label for="input-role">Cargo / Especialidade</label>
+            <input type="text" id="input-role" placeholder="Ex: Desenvolvedor Front-end / Piloto #95">
+          </div>
+
+          <div class="form-group">
+            <label for="input-quote">Slogan ou Frase Morte</label>
+            <input type="text" id="input-quote" placeholder="Ex: Eu sou a velocidade!">
+          </div>
+
+          <div class="form-group">
+            <label for="input-bio">Sobre Você (Biografia)</label>
+            <textarea id="input-bio" rows="4" placeholder="Escreva sobre suas conquistas e experiência..."></textarea>
+          </div>
+        </div>
+
+        <!-- Gerenciador de Habilidades -->
+        <div class="form-section">
+          <h3><i class="fa-solid fa-bolt"></i> Suas Habilidades</h3>
+          
+          <div id="skills-editor-container">
+            <!-- Inseridos via JS -->
+          </div>
+
+          <button type="button" class="btn-add-skill" id="btn-add-skill">
+            <i class="fa-solid fa-plus"></i> Adicionar Nova Habilidade
+          </button>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-secondary" id="btn-reset-default">Restaurar Padrão McQueen</button>
+          <button type="submit" class="btn-primary"><i class="fa-solid fa-check"></i> Salvar Alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- EFEITO VISUAL KACHOW -->
+  <div id="kachow-overlay" class="kachow-overlay">
+    <div class="kachow-text">KACHOW! ⚡</div>
+  </div>
+
+  <!-- Arquivo JS Externo -->
+  <script src="script.js"></script>
+</body>
+</html>
